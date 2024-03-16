@@ -1,0 +1,21 @@
+<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#69A1F4"/>
+      <stop offset="100%" stop-color="#9BCBFF"/>
+    </linearGradient>
+    <linearGradient id="sunGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFD194"/>
+      <stop offset="100%" stop-color="#FFC850"/>
+    </linearGradient>
+    <linearGradient id="cloudGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F0F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="16" fill="url(#skyGradient)"/>
+  <circle cx="24" cy="10" r="6" fill="url(#sunGradient)"/>
+  <path d="M6,20a6,6 0 0,1 12,0c0,1.5 -3,4 -6,4s-6,-2.5 -6,-4z" fill="url(#cloudGradient)"/>
+  <path d="M10,16a4,4 0 0,1 8,0c0,1 -2,3 -4,3s-4,-2 -4,-3z" fill="url(#cloudGradient)"/>
+  <path d="M14,24a7,7 0 0,1 14,0c0,2 -4,5 -7,5s-7,-3 -7,-5z" fill="url(#cloudGradient)"/>
+</svg>
