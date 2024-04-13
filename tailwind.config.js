@@ -5,9 +5,41 @@ const typographyStyles = require('./typography')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'selector',
+  darkMode: 'selector', // or 'media' based on your preference
   plugins: [typographyPlugin],
   theme: {
+    extend: {
+      fontFamily: {
+        sans: [
+          'Roboto',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
+        ],
+        // Adding Lato for headings
+        lato: ['Lato', 'sans-serif'],
+      },
+      // Custom utilities for headings
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'h1, h2': {
+              fontFamily: `${theme('fontFamily.lato').join(',')}`,
+            },
+          },
+        },
+      }),
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -23,6 +55,7 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    // Incorporate custom typography styles
     typography: typographyStyles,
   },
 }

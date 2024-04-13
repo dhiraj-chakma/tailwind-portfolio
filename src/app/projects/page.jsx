@@ -3,12 +3,22 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoMoosician from '@/images/logos/moosician.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
+import logoDashboard from '@/images/logos/dashboard.svg'
 import logoNews from '@/images/logos/news.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoWeather from '@/images/logos/weather.svg'
 
 const projects = [
+  {
+    name: 'Admin Dashboard',
+    description:
+      'A dashboard website provides a user-friendly interface that displays key performance indicators, real-time data visualizations, and analytics to facilitate decision-making and insights at a glance.',
+    link: {
+      href: 'https://66195166775c9700a692b969--dashboard-dhiraj.netlify.app/',
+      label: 'Dashboard',
+    },
+    logo: logoDashboard,
+  },
   {
     name: 'Moosician',
     description:
@@ -24,7 +34,7 @@ const projects = [
     description:
       'Stay ahead of the weather: Real-time updates and forecasts at your fingertips.',
     link: {
-      href: 'https://weather-app-8935ef337293.herokuapp.com/',
+      href: 'https://weather-dhiraj.netlify.app/',
       label: 'Weather App',
     },
     logo: logoWeather,
@@ -34,7 +44,7 @@ const projects = [
     description:
       'A sleek platform aggregating the latest tech news, optimized for rapid, interactive consumption.',
     link: {
-      href: 'https://hackernews-13a58a81460e.herokuapp.com/',
+      href: 'https://hacker-new-dhiraj.netlify.app/',
       label: 'hacker news',
     },
     logo: logoNews,
